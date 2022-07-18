@@ -26,7 +26,7 @@ In this approach, we integrate over distance from 0 to the given radius. The
 integrand is a function representing the measure of the set of points that are
 the given distance from the closest center.
 
-#Performance
+## Performance
 
 The algorithms all have tunable parameters that can control speed v.s. accuracy.
 For Monte Carlo, the number of samples can be configured; for the numerical integration-based
@@ -42,3 +42,7 @@ the stress tests, but its relative error is on the order of 0.01% for most tests
 IntegralM takes 522ms to complete the stress tests, and its relative error is at least on par with IntegralA in every test, on the order of 0.01%. For most of the simpler tests, IntegralM achieves accuracy near the double-precision limit, roughly 0.000000000000001%.
 
 The full results can be seen in output.txt.
+
+## Getting started
+
+After cloning the repo, compile `sphere_points_main.cc` with your compiler of choice and execute it.
