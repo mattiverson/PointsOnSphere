@@ -1,0 +1,96 @@
+Testing numerical integration:
+integral from 0 to 1 of [1 dx] (should = 1): 1.000000000000000
+integral from 0 to 5 of [x dx] (should = 12.5): 12.500000000000002
+integral from 0 to pi/3 of [sin(x) dx] (should = 0.5): 0.500000000000000
+integral from 0 to pi/3 of [cos(x) dx] (should = sqrt(3)/2 = 0.866025403784439): 0.866025403784439
+integral from 0.01 to 1 of [1/x dx] (should = -log(0.01) = 4.60517018598809): 4.605170185988612
+End of numerical integration tests
+
+Testing monteCarloSlow:
+  testSinglePointFullCoverage	PASSED: expected 1.000e+00, actual 1.000e+00, delta 0.000e+00 (0.0%)
+  testSinglePointHalfCoverage	PASSED: expected 5.000e-01, actual 5.085e-01, delta 8.500e-03 (1.7%)
+  testSingleBigPointAtPole	PASSED: expected 1.340e-01, actual 1.328e-01, delta 1.175e-03 (0.9%)
+  testSingleSmallPointAtPole	PASSED: expected 1.370e-03, actual 1.200e-03, delta 1.705e-04 (12.4%)
+  testSingleBigPointAtMidLat	PASSED: expected 1.340e-01, actual 1.406e-01, delta 6.625e-03 (4.9%)
+  testSingleSmallPointAtMidLat	PASSED: expected 1.370e-03, actual 2.000e-03, delta 6.295e-04 (45.9%)
+  testSingleBigPointAtEquator	PASSED: expected 6.699e-02, actual 6.890e-02, delta 1.913e-03 (2.9%)
+  testSingleSmallPointAtEquator	PASSED: expected 6.852e-04, actual 7.000e-04, delta 1.477e-05 (2.2%)
+  testTwoDisjointPoints		PASSED: expected 2.679e-01, actual 2.697e-01, delta 1.751e-03 (0.7%)
+  testTwoIntersectingPoints	PASSED: expected 2.143e-01, actual 2.123e-01, delta 1.969e-03 (0.9%)
+  testFiveRandomPoints		PASSED: expected 4.098e-01, actual 4.100e-01, delta 2.353e-04 (0.1%)
+  testFivePoints		PASSED: expected 4.019e-01, actual 4.006e-01, delta 1.324e-03 (0.3%)
+
+Starting stress tests:
+  testHundredRandomPoints	PASSED: expected 7.845e-01, actual 7.865e-01, delta 1.962e-03 (0.3%)
+  testOneThousandRandomPoints	PASSED: expected 7.418e-01, actual 7.475e-01, delta 5.746e-03 (0.8%)
+monteCarloSlow ran in 094724 us
+
+
+
+
+Testing monteCarloDoubleIndex:
+  testSinglePointFullCoverage	PASSED: expected 1.000e+00, actual 1.000e+00, delta 0.000e+00 (0.0%)
+  testSinglePointHalfCoverage	PASSED: expected 5.000e-01, actual 5.038e-01, delta 3.800e-03 (0.8%)
+  testSingleBigPointAtPole	PASSED: expected 1.340e-01, actual 1.348e-01, delta 8.254e-04 (0.6%)
+  testSingleSmallPointAtPole	PASSED: expected 1.370e-03, actual 1.400e-03, delta 2.953e-05 (2.2%)
+  testSingleBigPointAtMidLat	PASSED: expected 1.340e-01, actual 1.355e-01, delta 1.525e-03 (1.1%)
+  testSingleSmallPointAtMidLat	PASSED: expected 1.370e-03, actual 1.000e-03, delta 3.705e-04 (27.0%)
+  testSingleBigPointAtEquator	PASSED: expected 6.699e-02, actual 6.850e-02, delta 1.513e-03 (2.3%)
+  testSingleSmallPointAtEquator	PASSED: expected 6.852e-04, actual 3.000e-04, delta 3.852e-04 (56.2%)
+  testTwoDisjointPoints		PASSED: expected 2.679e-01, actual 2.725e-01, delta 4.551e-03 (1.7%)
+  testTwoIntersectingPoints	PASSED: expected 2.143e-01, actual 2.151e-01, delta 8.306e-04 (0.4%)
+  testFiveRandomPoints		PASSED: expected 4.098e-01, actual 4.099e-01, delta 1.353e-04 (0.0%)
+  testFivePoints		PASSED: expected 4.019e-01, actual 4.055e-01, delta 3.576e-03 (0.9%)
+
+Starting stress tests:
+  testHundredRandomPoints	PASSED: expected 7.845e-01, actual 7.785e-01, delta 6.038e-03 (0.8%)
+  testOneThousandRandomPoints	PASSED: expected 7.418e-01, actual 7.392e-01, delta 2.554e-03 (0.3%)
+monteCarloDoubleIndex ran in 044039 us
+
+
+
+
+Testing IntegralA:
+  testSinglePointFullCoverage	PASSED: expected 1.000e+00, actual 1.000e+00, delta 3.331e-16 (0.0%)
+  testSinglePointHalfCoverage	PASSED: expected 5.000e-01, actual 5.000e-01, delta 1.665e-16 (0.0%)
+  testSingleBigPointAtPole	PASSED: expected 1.340e-01, actual 1.340e-01, delta 3.705e-05 (0.0%)
+  testSingleSmallPointAtPole	PASSED: expected 1.370e-03, actual 1.377e-03, delta 6.103e-06 (0.4%)
+  testSingleBigPointAtMidLat	PASSED: expected 1.340e-01, actual 1.340e-01, delta 7.402e-07 (0.0%)
+  testSingleSmallPointAtMidLat	PASSED: expected 1.370e-03, actual 1.371e-03, delta 3.116e-07 (0.0%)
+  testSingleBigPointAtEquator	PASSED: expected 6.699e-02, actual 6.699e-02, delta 3.883e-07 (0.0%)
+  testSingleSmallPointAtEquator	PASSED: expected 6.852e-04, actual 6.854e-04, delta 1.559e-07 (0.0%)
+  testTwoDisjointPoints		PASSED: expected 2.679e-01, actual 2.679e-01, delta 2.058e-07 (0.0%)
+  testTwoIntersectingPoints	PASSED: expected 2.143e-01, actual 2.143e-01, delta 2.433e-05 (0.0%)
+  testFiveRandomPoints		PASSED: expected 4.098e-01, actual 4.098e-01, delta 2.286e-06 (0.0%)
+  testFivePoints		PASSED: expected 4.019e-01, actual 4.020e-01, delta 3.860e-05 (0.0%)
+
+Starting stress tests:
+  testHundredRandomPoints	PASSED: expected 7.845e-01, actual 7.846e-01, delta 1.456e-05 (0.0%)
+  testOneThousandRandomPoints	PASSED: expected 7.418e-01, actual 7.418e-01, delta 2.858e-07 (0.0%)
+integralA ran in 1217298 us
+
+
+
+
+Testing IntegralM:
+  testSinglePointFullCoverage	PASSED: expected 1.000e+00, actual 1.000e+00, delta 3.331e-16 (0.0%)
+  testSinglePointHalfCoverage	PASSED: expected 5.000e-01, actual 5.000e-01, delta 1.665e-16 (0.0%)
+  testSingleBigPointAtPole	PASSED: expected 1.340e-01, actual 1.340e-01, delta 2.776e-17 (0.0%)
+  testSingleSmallPointAtPole	PASSED: expected 1.370e-03, actual 1.370e-03, delta 4.055e-17 (0.0%)
+  testSingleBigPointAtMidLat	PASSED: expected 1.340e-01, actual 1.340e-01, delta 2.776e-17 (0.0%)
+  testSingleSmallPointAtMidLat	PASSED: expected 1.370e-03, actual 1.370e-03, delta 4.055e-17 (0.0%)
+  testSingleBigPointAtEquator	PASSED: expected 6.699e-02, actual 6.699e-02, delta 1.388e-17 (0.0%)
+  testSingleSmallPointAtEquator	PASSED: expected 6.852e-04, actual 6.852e-04, delta 2.027e-17 (0.0%)
+  testTwoDisjointPoints		PASSED: expected 2.679e-01, actual 2.679e-01, delta 5.551e-17 (0.0%)
+  testTwoIntersectingPoints	PASSED: expected 2.143e-01, actual 2.143e-01, delta 3.969e-15 (0.0%)
+  testFiveRandomPoints		PASSED: expected 4.098e-01, actual 4.098e-01, delta 1.486e-06 (0.0%)
+  testFivePoints		PASSED: expected 4.019e-01, actual 4.019e-01, delta 1.110e-16 (0.0%)
+
+Starting stress tests:
+  testHundredRandomPoints	PASSED: expected 7.845e-01, actual 7.845e-01, delta 1.370e-06 (0.0%)
+  testOneThousandRandomPoints	PASSED: expected 7.418e-01, actual 7.417e-01, delta 4.341e-06 (0.0%)
+integralM ran in 541621 us
+
+
+
+
